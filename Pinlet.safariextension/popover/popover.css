@@ -10,24 +10,34 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	padding: .5em;
+	padding: .75em;
 	font-family: "Helvetica Neue";
 	font-size: 13px;
 	line-height: 1em;
 }
 
+.row, .column {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
 form {
 	height: 100%;
-	display: flex;
-	flex-direction: column;
 }
 
 label {
 	display: block;
 }
 
-label + label {
-	margin-top: .5em;
+main > * + *, footer {
+	margin-top: .75em;
+}
+
+.row > * + * {
+	margin-left: .75em;
 }
 
 input[type="text"], textarea, button {
@@ -39,10 +49,13 @@ input[type="text"], textarea, button {
 input[type="text"], textarea {
 	width: 100%;
 	margin-top: .25em;
+	border: 1px solid #bbb;
+	padding: .375em;
 }
 
 textarea {
 	resize: vertical;
+	height: 5em;
 }
 
 main {
@@ -51,8 +64,6 @@ main {
 
 footer {
 	flex: none;
-	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 

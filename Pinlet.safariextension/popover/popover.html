@@ -5,7 +5,7 @@
 		<script src="./popover.js"></script>
 	</head>
 	<body>
-		<form>
+		<form class="column">
 			<main>
 				<label>
 					URL
@@ -23,16 +23,18 @@
 					Tags
 					<input type="text" name="tags">
 				</label>
-				<label>
-					<input type="checkbox" name="isPrivate">
-					Private
-				</label>
-				<label>
-					<input type="checkbox" name="isReadLater">
-					Read later
-				</label>
+				<div class="row">
+					<label>
+						<input type="checkbox" name="isPrivate">
+						Private
+					</label>
+					<label>
+						<input type="checkbox" name="isReadLater">
+						Read later
+					</label>
+				</div>
 			</main>
-			<footer>
+			<footer class="row">
 				<button name="cancel">Cancel</button>
 				<button name="add">Add</button>
 			</footer>
