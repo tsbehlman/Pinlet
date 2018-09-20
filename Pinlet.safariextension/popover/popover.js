@@ -66,7 +66,7 @@
 		form.description.value = "";
 		form.tags.value = "";
 		form.isPrivate.checked = false;
-		form.isReadLater.checked = false;
+		form.isReadLater.checked = true;
 	}
 
 	window.addEventListener( "DOMContentLoaded", start, false );
