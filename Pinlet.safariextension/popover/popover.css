@@ -11,7 +11,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: .75em;
-	font-family: "Helvetica Neue";
+	font-family: -apple-system;
 	font-size: 13px;
 	line-height: 1em;
 }
@@ -69,4 +69,5 @@ footer {
 
 button {
 	flex: none;
+	width: 6.5em;
 }
